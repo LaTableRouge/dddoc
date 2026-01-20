@@ -1,0 +1,21 @@
+#!/bin/sh
+
+red='\033[0;31m'
+green='\033[0;32m'
+yellow='\033[0;33m'
+blue='\033[0;34m'
+no_color='\033[0m'
+
+echo ""
+echo -e "${blue}(╭ರ_•́) Checking commit name (╭ರ_•́)${no_color}"
+echo ""
+
+# Check if npx is available locally, otherwise use Docker container
+if command -v npx >/dev/null 2>&1; then
+  npx --no-install commitlint --edit $1
+elif command -v docker >/dev/null 2>&1; then
+  docker compose exec -T docusaurus npx --no-install commitlint --edit $1
+else
+  echo -e "${red}Error: Neither npx nor Docker is available. Please install Node.js or start the Docker container.${no_color}"
+  exit 1
+fi
