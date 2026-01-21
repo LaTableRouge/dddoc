@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Elements
 
 Theme.json elements allow you to style specific HTML elements (such as headings, links, buttons, captions, and citations) globally or within specific blocks.

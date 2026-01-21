@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Handling Supported Styles for ACF Blocks
 
 This guide explains how to declare, override, and output supported styles for custom blocks—including ACF blocks—in WordPress.

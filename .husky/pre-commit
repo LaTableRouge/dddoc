@@ -34,8 +34,8 @@ if command -v npx >/dev/null 2>&1; then
   npx --no-install git-precommit-checks
   npx --no-install lint-staged
 elif command -v docker >/dev/null 2>&1; then
-  docker compose exec -T docusaurus npx --no-install git-precommit-checks
-  docker compose exec -T docusaurus npx --no-install lint-staged
+  docker compose exec -T app npx --no-install git-precommit-checks
+  docker compose exec -T app npx --no-install lint-staged
 else
   echo -e "${red}Error: Neither npx nor Docker is available. Please install Node.js or start the Docker container.${no_color}"
   exit 1

@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Useful Git Commands
 
 🐙 **Git** is the most widely used version control system. It helps track changes in your code, collaborate with others, and manage your project's history.

@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # Cleaning WPML Data after Plugin Uninstallation
 
 After uninstalling the **WPML (WordPress Multilingual Plugin)**, you might want to remove all the related data from your WordPress database.

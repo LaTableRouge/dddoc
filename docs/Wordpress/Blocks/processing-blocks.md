@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # Processing ACF and Native (React) Blocks in WordPress
 
 For a comprehensive guide on processing ACF and native (React) blocks in WordPress, see:

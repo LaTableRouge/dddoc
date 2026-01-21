@@ -1,7 +1,3 @@
----
-sidebar_label: 'Setup Dockerized'
-sidebar_position: 3
----
 
 # Setup dev environment under Docker with Traefik, MariaDb, Redis, Maildev and Keycloak
 

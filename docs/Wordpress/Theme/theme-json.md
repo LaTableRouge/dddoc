@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Using the theme.json
 
 The `theme.json` file is a powerful configuration file introduced in WordPress 5.8 that allows theme developers to control various aspects of their theme's appearance and functionality.

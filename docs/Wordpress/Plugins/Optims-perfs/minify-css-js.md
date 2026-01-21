@@ -1,9 +1,4 @@
----
-id: wp-super-minify
-title: Minifies JS and CSS
-sidebar_label: Minifies JS and CSS
-slug: /plugins/wp-super-minify
----
+# WP Super Minify - Minifies JS and CSS
 
 **WP Super Minify** is a WordPress plugin that combines, minifies, and caches JavaScript and CSS files to optimize your site's performance.
 

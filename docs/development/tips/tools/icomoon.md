@@ -1,7 +1,3 @@
----
-sidebar_label: 'Icomoon'
-sidebar_position: 3
----
 
 # 📑 Icomoon - Icon Font Guidelines
 

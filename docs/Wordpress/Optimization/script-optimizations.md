@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # WordPress Script Optimizations
 
 To improve the performance of your WordPress site, it's important to optimize the way scripts are loaded.

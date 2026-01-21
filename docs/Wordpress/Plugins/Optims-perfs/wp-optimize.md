@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # WP-Optimize
 
 ![Exemple de bannière](../../../assets/plugins_wp_optimize.png)

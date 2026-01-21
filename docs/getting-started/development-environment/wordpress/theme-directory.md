@@ -1,8 +1,3 @@
----
-sidebar_label: 'Mapping Theme Directory'
-sidebar_position: 1
----
-
 # Mapping WordPress Theme Directory to an External Folder Using Docker Compose
 
 ## **Overview**

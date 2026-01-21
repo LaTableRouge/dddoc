@@ -1,8 +1,3 @@
----
-sidebar_label: 'Composer usage'
-sidebar_position: 5
----
-
 # Composer
 
 Composer is a dependency manager for PHP, designed to handle project dependencies, making it easy to manage packages and keep them up to date. 

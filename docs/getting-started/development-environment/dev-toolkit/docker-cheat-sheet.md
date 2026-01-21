@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Useful Docker & Docker Compose Commands
 
 🚢 **Docker** and **Docker Compose** are essential tools for creating, deploying, and managing containerized applications.

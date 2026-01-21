@@ -1,8 +1,3 @@
----
-sidebar_label: 'Update Hosts File'
-sidebar_position: 6
----
-
 # Updating the `hosts` File
 
 This guide explains how to add custom entries to the `hosts` file on macOS, Linux (Debian-based), and Windows.

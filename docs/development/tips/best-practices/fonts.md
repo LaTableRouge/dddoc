@@ -1,8 +1,3 @@
----
-sidebar_label: 'Fonts'
-sidebar_position: 2
----
-
 # 🔤 Guidelines: Fonts
 
 ## 🔄 Converting fonts for most browsers

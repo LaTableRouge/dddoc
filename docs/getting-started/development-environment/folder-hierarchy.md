@@ -1,8 +1,3 @@
----
-sidebar_label: 'Folder Hierarchy'
-sidebar_position: 7
----
-
 # Development Environment Folder Hierarchy
 
 This document outlines the recommended folder structure for organizing your development projects, tools, and documentation.

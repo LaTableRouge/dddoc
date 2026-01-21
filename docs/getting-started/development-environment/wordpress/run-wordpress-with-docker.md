@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # WordPress Docker Setup with Apache/PHP
 
 This guide explains how to set up and run a WordPress project using Docker with Apache and PHP.

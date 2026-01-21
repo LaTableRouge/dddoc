@@ -1,23 +1,13 @@
 services:
-  docusaurus:
+  app:
     build:
       context: .
-      target: dev
-    ports:
-      - '3000:3000'
     volumes:
-      - '.:/opt/docusaurus'
-      - '/opt/docusaurus/node_modules'
-    labels:
-      - "traefik.enable=true"
-      - "traefik.docker.network=traefik"
-      - "traefik.http.routers.docusaurus.rule=Host(`local.doc.com`)"
-      - "traefik.http.routers.docusaurus.entrypoints=http"
-      - "traefik.http.routers.docusaurus.tls=false"
-      - "traefik.http.services.docusaurus.loadbalancer.server.port=3000"
+      - '.:/app'
+      - '/app/node_modules'
+    command: sh -c "npm install && tail -f /dev/null"
     networks:
-      - traefik
+      - default
 
 networks:
-  traefik:
-    external: true
+  default:

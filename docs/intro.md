@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Welcome !
 
 This documentation is crucial for the proper functioning and evolution of the project. It belongs to the technical team, and keeping it up to date is essential.

@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Styling Blocks and Adding Variations with theme.json
 
 Styling WordPress blocks is most effective when you leverage the power of `theme.json` and block style variations.

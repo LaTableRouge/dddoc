@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Cleaning Yoast SEO Tables in WordPress
 
 Yoast SEO can accumulate redundant data over time, especially when posts or terms are deleted. This can impact the performance of your WordPress database.

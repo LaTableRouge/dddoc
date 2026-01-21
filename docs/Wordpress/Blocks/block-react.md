@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Native (React) Block Configuration Example with Timber
 
 This guide explains how to create and configure native (React) blocks for WordPress, using a modern workflow and best practices. For details on processing and registering blocks, see [Processing Blocks](processing-blocks.md).

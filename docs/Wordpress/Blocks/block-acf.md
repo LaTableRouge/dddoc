@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # ACF Block configuration example with Timber
 
 This guide explains how to create and configure ACF blocks in a Timber environment, using native WordPress block features alongside ACF fields.

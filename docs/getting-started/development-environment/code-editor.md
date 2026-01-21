@@ -1,8 +1,3 @@
----
-sidebar_label: 'Code Editor'
-sidebar_position: 2
----
-
 # Code Editor
 
 In this guide, we will walk through setting up your code editor (Visual Studio Code) and configure it for PHP, Laravel, WordPress, Git, and Docker projects.

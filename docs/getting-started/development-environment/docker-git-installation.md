@@ -1,8 +1,3 @@
----
-sidebar_label: 'Docker & Git Installation'
-sidebar_position: 2
----
-
 # Docker Desktop and Git Installation Guide
 
 ## Table of Contents

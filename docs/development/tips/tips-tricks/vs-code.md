@@ -1,8 +1,3 @@
----
-sidebar_label: 'Tips VS Code'
-sidebar_position: 2
----
-
 # 🔤 Tips VS Code
 
 ## 🔄 Fixing duplicate redirection rules

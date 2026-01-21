@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Query Monitor
 
 ![Exemple de bannière](../../../assets/plugins_query_monitor.png)

@@ -1,8 +1,3 @@
----
-sidebar_label: 'Base setup'
-sidebar_position: 1
----
-
 # Setup your development environment
 
 Welcome to the setup guide for your development environment! To simplify dependency management and configurations, we use Docker for the entire development environment.

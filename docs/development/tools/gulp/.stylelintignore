@@ -1,0 +1,3 @@
+resources/sass/**/abstracts/**/*.scss
+resources/sass/**/common/**/*.scss
+resources/sass/**/vendors/**/*.scss

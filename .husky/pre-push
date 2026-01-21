@@ -14,7 +14,7 @@ echo ""
 if command -v npx >/dev/null 2>&1; then
   npx --no-install validate-branch-name
 elif command -v docker >/dev/null 2>&1; then
-  docker compose exec -T docusaurus npx --no-install validate-branch-name
+  docker compose exec -T app npx --no-install validate-branch-name
 else
   echo -e "${red}Error: Neither npx nor Docker container is available. Please install Node.js or start the Docker container.${no_color}"
   exit 1

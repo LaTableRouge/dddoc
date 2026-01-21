@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Blocks List
 
 This document provides a comprehensive list of blocks used across our WordPress projects, organized by block type and showing where each block is implemented.

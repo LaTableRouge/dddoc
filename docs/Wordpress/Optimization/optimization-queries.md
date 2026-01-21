@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # Optimization Queries
 
 When managing a WordPress site, you might encounter metadata values that are empty or NULL. To clean up these values from your database, you can use the following SQL queries.
