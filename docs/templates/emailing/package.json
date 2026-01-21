@@ -1,0 +1,19 @@
+{
+  "name": "emailing",
+  "version": "1.0.0",
+  "description": "emailing",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@192.168.1.120/~/[ProjectRepo].git"
+  },
+  "author": "Development Team",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.1"
+  }
+}

@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    command: sh -c "npm install && tail -f /dev/null"
+    networks:
+      - default
+
+networks:
+  default:

@@ -1,0 +1,58 @@
+// Img
+$pictures-path: '../img';
+
+//fonts
+$fonts-path: '../fonts';
+$icomoon-font-path: '#{$fonts-path}/icomoon/fonts';
+
+$fonts: (
+  'text': (
+    'name': 'Arial'
+    'serif': sans-serif
+  ),
+  'title': (
+    'name': 'Arial'
+  )
+);
+
+// Font-sizes must be converted to rem, use function calculate-rem or min-max-interpolation
+$font-sizes: (
+  16: calculate-rem(16),
+);
+
+$state-colors: (
+  'danger': #dc3545,
+  'warning': #ffc107,
+  'info': #17a2b8,
+  'success': #28a745
+);
+
+// Colors must be named in kebab case based on this : https://colornamer.robertcooper.me/
+$colors: (
+  'white': #fff,
+  'black': #000,
+);
+
+$spacings: (
+  base: calculate-rem(30)
+);
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+  fhd: 1900px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  fhd: 1440px
+);

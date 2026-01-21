@@ -1,0 +1,131 @@
+# Easy to style checkbox
+
+With pseudo element directly on the input tag
+
+```html
+<div class="input-wrapper--checkbox">
+    <input
+        class="input-wrapper__input"
+        type="checkbox"
+        value="your-value"
+        id="your-checkbox-id"
+        autocomplete="off"
+    >
+    <label for="your-checkbox-id">
+        Hi je suis une checkbox
+    </label>
+</div>
+```
+
+```scss
+.input-wrapper {
+  &--checkbox {
+    --input-size: 14px;
+    --checkbox-bg: white;
+    --checkbox-color: black;
+    --checkbox-border-color: grey;
+    --checkbox-disabled-color: grey;
+    --checkbox-disabled-border-color: lightgray;
+
+    position: relative;
+
+    input[type='checkbox'] {
+      &:not(:checked),
+      &:checked {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+
+        & + label {
+          display: inline-block;
+          position: relative;
+          padding: calc(var(--input-size) / 2) 0 calc(var(--input-size) / 2) calc(var(--input-size) + (var(--input-size) / 2));
+          text-align: left;
+          cursor: pointer;
+          user-select: none;
+
+          &::before,
+          &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: var(--input-size);
+            height: var(--input-size);
+            margin: 0;
+            transform: translateY(-50%);
+            transition: all 0.2s;
+            transition: background-color 0.1s ease-in-out;
+            font-style: normal;
+            font-weight: bold;
+          }
+
+          &::before {
+            content: '';
+            border: 1px solid var(--checkbox-border-color);
+            background: var(--checkbox-bg);
+          }
+
+          &::after {
+            content: '✓';
+            color: var(--checkbox-bg);
+            font-size: calc(var(--input-size) - 1px);
+            font-variant: normal;
+            line-height: 1;
+            text-align: center;
+            text-transform: none;
+          }
+        }
+      }
+
+      &:checked {
+        & + label {
+          &::before {
+            border-color: var(--checkbox-color);
+            background-color: var(--checkbox-color);
+          }
+
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+
+      &:not(:checked) {
+        & + label::after {
+          opacity: 0;
+        }
+      }
+
+      &:disabled {
+        &:checked,
+        &:not(:checked) {
+          & + label {
+            &::before {
+              border-color: var(--checkbox-border-color);
+              background-color: var(--checkbox-disabled-border-color);
+            }
+
+            &::after {
+              color: var(--checkbox-disabled-color);
+            }
+          }
+        }
+
+        & + label {
+          color: var(--checkbox-disabled-color);
+          cursor: not-allowed;
+        }
+      }
+
+      &:checked:focus,
+      &:not(:checked):focus {
+        & + label::before {
+          border: 1px dotted var(--checkbox-color);
+        }
+      }
+    }
+  }
+}
+```

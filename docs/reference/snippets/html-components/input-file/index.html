@@ -1,0 +1,26 @@
+<div class="input-wrapper input-wrapper--file">
+    <label
+        class="file__label"
+        for="my-input-file"
+        data-button_text="Parcourir"
+        title="Sélectionner votre/vos fichier"
+    >
+        <input
+            type="file"
+            id="my-input-file"
+            max="3"
+            name="files[]"
+            aria-hidden="true"
+            type="file"
+            class="file__input"
+            multiple
+        >
+        <button
+            class="file__delete"
+            aria-hidden="true"
+            title="Supprimer le/les fichier selectionné"
+        >
+        </button>
+    </label>
+    <ul class="file__list">Aucun fichier choisi</ul>
+</div>

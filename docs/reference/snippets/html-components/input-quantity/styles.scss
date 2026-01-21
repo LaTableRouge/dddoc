@@ -1,0 +1,76 @@
+.input-wrapper--quantity {
+  --button-size: 20px;
+  --button-color: white;
+  --button-background-color: black;
+  --input-background-color: white;
+
+  position: relative;
+  max-width: 70px;
+  padding-right: var(--button-size);
+  padding-left: var(--button-size);
+
+  input[type='number'] {
+    max-width: 100%;
+    padding: 2px 0;
+    border: none;
+    border: 1px solid currentColor;
+    background-color: var(--input-background-color);
+    font-size: 12px;
+    text-align: center;
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      margin: 0;
+      -webkit-appearance: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .quantity {
+    &-nav {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    &-button {
+      z-index: 1;
+      width: var(--button-size);
+      height: 100%;
+      padding: 0;
+      transition: opacity 0.2s ease-in-out;
+      border: none;
+      background-color: var(--button-background-color);
+      color: var(--button-color);
+      line-height: 1;
+      cursor: pointer;
+      pointer-events: auto;
+
+      &[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      &:hover:not([disabled]) {
+        opacity: 0.8;
+      }
+    }
+
+    &-up {
+      right: 0;
+    }
+
+    &-down {
+      left: 0;
+    }
+  }
+}
