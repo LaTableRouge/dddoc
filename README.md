@@ -24,8 +24,8 @@ Project templates and boilerplates for quick project setup.
 1. Browse the documentation directly on GitHub - all markdown files are rendered automatically
 2. Clone the repository to access files locally:
    ```bash
-   git clone git@github.com:LaTableRouge/doc.git
-   cd doc
+   git clone git@github.com:LaTableRouge/dddoc.git
+   cd dddoc
    ```
 
 ## 📝 Contributing
