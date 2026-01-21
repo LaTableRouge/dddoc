@@ -49,7 +49,7 @@
 		"markdownlint-cli2": "^0.19.1",
 		"prettier": "^3.6.2",
 		"validate-branch-name": "^1.3.2",
-    "@commitlint/cli": "^20.1.0",
+		"@commitlint/cli": "^20.1.0",
 		"@commitlint/config-conventional": "^20.0.0"
 	},
 	"lint-staged": {
@@ -101,15 +101,18 @@
 		},
 		"rules": [
 			{
+				"filter": "^(?!\\./package\\.json$|^package\\.json$)",
 				"message": "Have you forgotten to finish some tasks?",
 				"nonBlocking": true,
 				"regex": "/(?:FIXME|TODO)/"
 			},
 			{
+				"filter": "^(?!\\./package\\.json$|^package\\.json$)",
 				"message": "You have conflict markers lying around",
 				"regex": "/^[<>|=]{4,}/m"
 			},
 			{
+				"filter": "^(?!\\./package\\.json$|^package\\.json$)",
 				"message": "Commit stopped: you've entered information that must not be committed!",
 				"regex": "/do not commit/i"
 			},
