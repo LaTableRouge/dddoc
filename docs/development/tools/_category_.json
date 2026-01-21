@@ -1,0 +1,8 @@
+{
+  "label": "Build Tools",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Build tool configurations and setups for Webpack, Vite, Gulp, and Husky."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Blocks",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Blocks are a way to create reusable content in WordPress. This section contains information about how to create and use blocks."
+  }
+}

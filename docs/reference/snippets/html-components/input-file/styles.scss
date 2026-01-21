@@ -1,0 +1,103 @@
+.input-wrapper--file {
+  --delete-button-size: 28px;
+  --input-text-color: white;
+  --input-background-color: black;
+  --list-text-color: black;
+
+  width: fit-content;
+  max-width: 100%;
+
+  .file {
+    &__label {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: calc(var(--delete-button-size) + 10px);
+
+      &::before {
+        content: attr(title);
+        padding: 4px 25px;
+        transition: opacity 0.2s ease-in-out;
+        background-color: var(--input-background-color);
+        color: var(--input-text-color);
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.67;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &__input {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &__delete {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: var(--delete-button-size);
+      height: var(--delete-button-size);
+      padding: 0;
+      transform: translateY(-50%);
+      transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      border: 0;
+      border: 1px solid var(--input-background-color);
+      background: none;
+      background-color: var(--input-text-color);
+      color: var(--input-background-color);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--input-background-color);
+        color: var(--input-text-color);
+      }
+
+      &[aria-hidden='true'] {
+        display: none;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 2px;
+        background-color: currentColor;
+      }
+
+      &::before {
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      }
+
+      &::after {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+      }
+    }
+
+    &__list {
+      width: 100%;
+      margin: 15px 5px 10px;
+      padding: 5px;
+      color: var(--list-text-color);
+      font-size: 10px;
+      font-weight: normal;
+      text-align: left;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

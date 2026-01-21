@@ -12,7 +12,8 @@
     "serve": "docusaurus serve --host 0.0.0.0",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint:md": "npx markdownlint-cli2 --config linters/.markdownlint.json --fix */**/*.md !**/node_modules/** !**/vendor/**"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

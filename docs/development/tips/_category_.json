@@ -1,0 +1,8 @@
+{
+  "label": "Tips & Tricks",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Development tips, tricks, best practices, and useful tools."
+  }
+}

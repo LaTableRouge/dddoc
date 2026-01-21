@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// Basic typography style for text.
+// -----------------------------------------------------------------------------
+
+html {
+  font-size: var(--font-level-16);
+}
+
+body {
+  font-family: var(--font-text);
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}

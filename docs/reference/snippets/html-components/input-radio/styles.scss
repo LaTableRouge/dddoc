@@ -1,0 +1,93 @@
+.input-wrapper {
+  &--radio {
+    --input-size: 16px;
+    --radio-bg: white;
+    --radio-color: black;
+    --radio-border-color: grey;
+    --radio-disabled-color: grey;
+    --radio-disabled-border-color: lightgray;
+
+    position: relative;
+
+    input[type='radio'] {
+      &:not(:checked),
+      &:checked {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+
+        & + label {
+          display: inline-block;
+          position: relative;
+          padding: calc(var(--input-size) / 2) 0 calc(var(--input-size) / 2) calc(var(--input-size) + (var(--input-size) / 2));
+          font-size: 12px;
+          text-align: left;
+          cursor: pointer;
+          user-select: none;
+
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin: 0;
+            transform: translateY(-50%);
+            transition: all 0.2s;
+            border-radius: 50%;
+          }
+
+          &::before {
+            left: 0;
+            width: var(--input-size);
+            height: var(--input-size);
+            border: 1px solid var(--radio-border-color);
+          }
+
+          &::after {
+            left: calc(var(--input-size) / 4);
+            width: calc(var(--input-size) - 6px);
+            height: calc(var(--input-size) - 6px);
+          }
+        }
+      }
+
+      &:checked {
+        & + label {
+          &::after {
+            opacity: 1;
+            background-color: var(--radio-color);
+          }
+        }
+      }
+
+      &:not(:checked) {
+        & + label::after {
+          opacity: 0;
+        }
+      }
+
+      &:disabled {
+        &:checked,
+        &:not(:checked) {
+          & + label {
+            &::before {
+              border-color: var(--radio-border-color);
+              background-color: var(--radio-disabled-border-color);
+            }
+
+            &::after {
+              color: var(--radio-disabled-color);
+            }
+          }
+        }
+
+        & + label {
+          color: var(--radio-disabled-color);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

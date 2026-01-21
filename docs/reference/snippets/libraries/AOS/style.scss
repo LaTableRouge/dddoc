@@ -1,0 +1,14 @@
+// CSS For custom animation
+div{
+  // Animation if AOS Exist
+  body[data-aos-easing] & {
+    transform: translateY(-20%);
+    opacity: 0;
+
+    &.is-inview {
+      transform: translateY(0);
+      transition: opacity 0.2s ease, transform 0.5s ease;
+      opacity: 1;
+    }
+  }
+}

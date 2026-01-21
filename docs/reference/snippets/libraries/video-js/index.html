@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video JS - example</title>
+    <link type="text/css" rel="stylesheet" href="./lib/video-js.css">
+    <link type="text/css" rel="stylesheet" href="./lib/videojs-http-source-selector.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <video-js
+            class="video-js"
+            data-ratio="16:9"
+            autoplay
+            controls
+            muted
+            loop
+            poster="https://via.placeholder.com/200x197"
+        >
+            <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm">
+            <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg">
+            <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+            <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp">
+        </video-js>
+    </main>
+    <footer>
+        <script type="text/javascript" src="./lib/video.min.js"></script>
+        <script type="text/javascript" src="./lib/videojs-http-source-selector.min.js"></script>
+        <script type="text/javascript" src="./lib/videojs-contrib-quality-levels.min.js"></script>
+        <script type="text/javascript" src="./main.js"></script>
+    </footer>
+</body>
+
+</html>
